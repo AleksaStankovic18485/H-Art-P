@@ -1,0 +1,19 @@
+.collection .navbar{
+    background-color: rgba(255, 255, 255, 0.711);
+}
+
+.collection .navbar-left a,
+.collection .navbar-right a, 
+.collection .logo {
+    color: black;
+}
+
+.collection .announcement-bar{
+    position: relative;
+}
+.collection .navbar{
+    position: relative;
+    top:0;
+}
+
+

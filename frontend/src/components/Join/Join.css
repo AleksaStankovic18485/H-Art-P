@@ -1,0 +1,120 @@
+.join {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    background-image: url('../../assets/join_img.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    filter: contrast(110%);
+}
+
+.join-content {
+    text-align: center;
+    width: 60%;
+    padding: 60px;
+    background-color:rgba(19, 39, 46, 0.5) ;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    opacity: 0; 
+    transform: translateY(50px); 
+    transition: opacity 0.5s ease, transform 0.5s ease; 
+}
+
+.join.appear .join-content {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.join-content h2 {
+    font-size: 80px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px; 
+}
+
+.join-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 80px; 
+    margin-top:40px;
+    font-family: 'Chivo',sans-serif;
+    font-weight: 300;
+}
+
+.join-content button,
+.join-content a
+{
+    font-size: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    padding: 15px 20px;
+    background-color: #2a5665;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+
+
+.join-content button:hover,
+.join-content a:hover {
+    background-color: white; 
+    color:#2a5665;
+}
+
+@media screen and (max-width: 800px) {
+    .join {
+      height: auto;
+    }
+  
+    .join-content {
+      text-align: center;
+      width: 90%;
+      padding: 40px;
+      background-color: transparent;
+      color: #fff;
+      border-radius: 10px;
+      box-shadow:none;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+      margin: 20px auto;
+    }
+  
+    .join.appear .join-content {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  
+    .join-content h2 {
+      font-size: 60px;
+      margin-bottom: 15px;
+    }
+  
+    .join-content p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+      margin-top: 30px;
+      background-color:rgba(19, 39, 46, 0.3) ;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    
+    }
+  
+    .join-content button{
+      font-size: 18px;
+      padding: 12px 40px;
+      margin-top: 30px;
+    }
+
+   
+    
+  }
+  

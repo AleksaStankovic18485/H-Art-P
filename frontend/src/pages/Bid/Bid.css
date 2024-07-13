@@ -1,0 +1,298 @@
+.bid .navbar {
+    background-color: rgba(255, 255, 255, 0.711);
+}
+
+.bid .navbar-left a,
+.bid .navbar-right a,
+.bid .logo {
+    color: black;
+}
+
+.bid .announcement-bar {
+    position: relative;
+}
+
+.bid .navbar {
+    position: relative;
+    top: 0;
+}
+
+
+.bid-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+.bid-image {
+    flex: 1;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ededed;
+    height: 800px;
+    width: 600px;
+}
+
+.bid-image img {
+    height: 80%;
+    width: 85%;
+    max-height: 600px;
+}
+
+.bid-details {
+    flex: 1;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 800px;
+    padding: 40px;
+}
+
+.bid-details h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 64px;
+    margin-bottom: 10px;
+    color: #13272e;
+    text-align: center;
+}
+
+.bid-details p {
+    font-family: 'Chivo', sans-serif;
+    font-size: 26px;
+    margin-bottom: 8px;
+    color: #13272e;
+
+}
+
+.bid-author {
+    width: fit-content;
+    margin: auto;
+    cursor: pointer;
+
+}
+
+.bid-author a {
+    font-family: 'Chivo', sans-serif;
+    font-size: 26px;
+    margin-bottom: 8px;
+    color: white;
+    background-color: #13272e;
+    transition: 0.1s ease;
+}
+
+
+
+
+.bid-author :hover {
+    color: #13272e;
+    background-color: transparent;
+    font-weight: bold;
+    border: 2px solid #13272e;
+}
+
+
+
+.bid-details .bid-country {
+    font-style: italic;
+    margin-top: 20px;
+}
+
+.bid-details .bid-description {
+    display: flex;
+    word-spacing: -2px;
+    gap: 5px;
+
+}
+
+.bid-details .bid-size p {
+    font-size: 20px;
+    font-style: italic;
+}
+
+
+
+.bid-details .bid-time-left {
+    border: 1px solid #13272e83;
+    width: 60%;
+    margin: 10% auto 10%;
+    box-shadow: 0px 0px 5px #13272e;
+    padding: 15px;
+}
+
+.bid-time-left.expired {
+    border: 1px solid red;
+    box-shadow: 0px 0px 5px red;
+}
+
+.bid-details .bid-time-left p {
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+}
+
+.bid-details .bid-time-left .bid-time-left-units {
+    font-size: 14px;
+    margin: 0;
+    opacity: 0.7;
+    color: #13272e;
+    word-spacing: 4px;
+}
+
+.bid-details .bid-price {
+    margin-top: 10%;
+    color: #13272e;
+    font-size: 35px;
+    width: fit-content;
+    text-decoration: underline;
+
+}
+
+.bid-details .bid-price-text {
+    font-size: 20px;
+}
+
+.bid-place-bid {
+
+    width: fit-content;
+    margin: 20px auto 0;
+
+}
+
+.bid-place-bid input {
+    font-size: 18px;
+    padding: 15px;
+    margin-top: 2px;
+    margin-right: 10px;
+    border: 1px solid #ced4da;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.bid-place-bid input:focus {
+    outline: none;
+}
+
+
+
+.bid-place-bid button {
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: #13272e;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.bid-place-bid button:disabled {
+
+    background-color: #13272eb9;
+    color: white;
+    border: none;
+    cursor: default;
+}
+
+.bid-place-bid button:disabled:hover {
+    cursor: not-allowed;
+}
+
+.bid-place-bid button:hover {
+    background-color: #13272ee1;
+}
+
+.bid-place-bid .bid-error {
+    color: red;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+
+.bid-place-bid input.error {
+    border-color: red;
+    /* menjam boju bordera na crvenu kad se pojavi greska  */
+}
+
+.flag-icon {
+    font-size: 25px;
+}
+
+.top-bidder-message h2 {
+    font-size: 32px;
+}
+
+@media screen and (max-width:850px) {
+    .bid-content {
+        display: block;
+    }
+
+    .bid-image {
+        margin-left: auto;
+        margin-right: auto;
+        height: 400px;
+        width: 300px;
+    }
+
+
+    .bid-details p {
+        font-size: 22px;
+    }
+
+    .bid-author a {
+        font-size: 22px;
+    }
+
+    .bid-details .bid-price-text {
+        font-size: 22px;
+    }
+
+    .bid-place-bid button{
+        margin-top:10px;
+        font-size: 13px;
+    }
+
+    .bid-place-bid input{
+        font-size: 16px;
+    }
+
+    
+    .bid-time-left.expired p {
+        
+        font-size: 25px;
+    }
+    
+
+    
+}
+
+@media screen and (max-width:444px) {
+    .bid-details .bid-time-left {
+        margin-top: 80px;
+        width:90%;
+       
+    }
+
+    .bid-details .bid-time-left p {
+        
+        font-size: 28px;
+    }
+    
+    .bid-details .bid-time-left .bid-time-left-units {
+        font-size: 15px;
+      
+    }
+
+    .bid-time-left.expired p {
+        
+        font-size: 25px;
+    }
+    
+
+    
+  
+}

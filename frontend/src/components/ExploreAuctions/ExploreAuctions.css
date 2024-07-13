@@ -1,0 +1,94 @@
+.explore-auctions{
+    display: flex;
+    flex-direction:column;
+    gap:20px;
+    padding:30px;
+} 
+
+.explore-auctions-heading{
+    display: flex;
+    flex-direction: column;
+    padding: 2% 20px 0;
+}
+
+.explore-auctions-heading h2{
+  
+    font-size: 95px;
+    font-weight: 400;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #13272e;
+}
+
+.explore-auctions-heading p{
+    max-width:60%;
+    color: #808080;
+    font-family: 'Chivo', sans-serif;
+}
+
+.explore-auctions-categories{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:30px;
+    text-align: center;
+    margin-top:60px;
+    overflow-x: scroll;
+    -ms-overflow-style: none;  /* za IE i Edge  valjda*/
+    scrollbar-width: none;  /* za Firefox  */
+  
+}
+
+.explore-auctions-categories-item img{
+    width: 5.5vw;
+    min-width: 80px;
+    cursor: pointer;
+    border-radius:50%;
+    margin-top: auto;
+    transition: 0.2s ease;
+  
+}
+
+.explore-auctions-categories-item img:hover{
+    padding:3px;
+    filter:brightness(115%)
+  
+}
+
+.explore-auctions-categories-item p{
+    margin-top: 10px;
+    margin-bottom: auto;
+    color: #747474;
+    font-size: max(1.3vw, 16px);
+    cursor:pointer;
+    font-family:'Bebas Neue', sans-serif;
+    font-weight: 300;
+}
+
+
+.explore-auctions-categories-item .active{
+    border: 4px solid #13272e;
+    padding:2px;
+    
+}
+
+@media screen and (max-width: 800px){
+    .explore-auctions-categories{
+ 
+        justify-content: space-between;
+        
+      
+    }
+    .explore-auctions-heading h2{
+        font-size: 70px;
+        text-align: center;
+    }
+
+    .explore-auctions-categories-item img{
+        width: 70px;
+        min-width: 70px;
+        
+      
+    }
+    
+
+}

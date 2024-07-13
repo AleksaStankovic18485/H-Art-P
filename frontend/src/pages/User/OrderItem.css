@@ -1,0 +1,340 @@
+.order-item{
+  font-family: 'Chivo', sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.order-item-container {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr 1fr;
+    align-items: start;
+    justify-content: center;
+    padding:100px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.order-item-container .auction-info {
+   
+    padding:0 20px;
+
+}
+
+
+.order-item-container .auction-info p
+{
+    margin-top:10px;
+}
+
+.order-item-container .auction-info a{
+    color:#13272e;
+    transition:0.2s ease;
+    
+}
+.order-item-container .auction-info a:hover{
+    text-decoration: underline;
+}
+
+
+.order-item-container .order-form {
+    
+    padding: 0 20px;
+    margin: 0 80px; /* Dodajemo margine sa obe strane formulara */
+ 
+
+}
+
+.order-item-container .order-info {
+    
+    padding: 0 20px;
+    margin: 0 20px; /* Dodajemo margine sa obe strane informacija o porudžbini */
+
+}
+
+.order-item-container .order-form h2{
+    font-size:2.5rem;
+    text-align: center;
+}
+
+
+.order-item-container h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #13272e;
+    margin-bottom: 20px;
+}
+
+.order-item-container p {
+    margin-bottom: 10px;
+    color: #13272e;
+}
+
+.order-item-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #13272e;
+}
+
+.order-item-container input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+.order-form-submit-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.order-form-submit-container button {
+    padding: 0.75rem 2rem;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+
+}
+
+
+.order-form-submit-container button:hover {
+    background-color: #13272e;
+    transform: translateY(-2px);
+  }
+  
+
+.order-form-submit-container button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.order-item-container .error-message {
+    color: red;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.order-item-container .auction-image {
+    max-height: 150px;
+    width: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.ordered-item {
+    font-family: 'Chivo', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.ordered-item-container {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+}
+
+.ordered-item-details {
+    text-align: center;
+}
+
+.ordered-item-details h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #13272e;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.ordered-item-details img {
+    max-height: 200px;
+    width: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.ordered-item-details p {
+    margin-bottom: 10px;
+    color: #13272e;
+}
+
+.ordered-item-details hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+.ordered-item-details h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #13272e;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.ordered-item-details b {
+    font-weight: bold;
+}
+
+.pending-order-message {
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #f00;
+    background-color: #ffe6e6;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .pending-order-message h2 {
+    color: #f00;
+    font-size: 18px;
+  }
+  
+  .ordered-item-details u{
+    color:green;
+  }
+ 
+  .ordered-item-details button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ordered-item-details button:hover {
+    background-color: #0056b3;
+  }
+
+  .pending-order {
+    font-family: 'Chivo', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.pending-order-container {
+    display:block;
+    align-items: start;
+    justify-content: center;
+    padding: 50px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+}
+
+.pending-auction-info {
+    padding: 0 30px;
+    display: block;
+    text-align: center;
+    justify-content: center;
+}
+
+.pending-auction-info p {
+    
+    margin-bottom: 10px;
+    color:#13272e;
+}
+
+.pending-auction-info h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #13272e;
+    margin-bottom: 20px;
+}
+
+.pending-auction-info img {
+    max-height: 150px;
+    width: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.pending-order-message {
+    padding: 30px;
+    border: 2px solid orangered;
+    background-color: #ffe6e6;
+    border-radius: 5px;
+    text-align: center;
+   
+}
+
+.pending-order-message h2 {
+    color: orangered;
+    font-size: 18px;
+    font-family: 'Chivo', sans-serif;
+}
+
+.pending-order-message span{
+    color:green;
+}
+
+
+/* Media Queries */
+
+  @media screen and (max-width: 800px) {
+    .order-item-container {
+        grid-template-columns: 1fr;
+        padding: 80px;
+      }
+    
+      .order-item-container .order-form {
+        margin: 50px 0;
+      }
+    
+      .order-item-container .order-info {
+        margin: 20px 0;
+      }
+  
+    .order-item-container .auction-info {
+      padding: 0;
+    }
+  
+
+  
+    .order-item-container .order-form h2 {
+      font-size: 2rem;
+    }
+  
+    .ordered-item-details h2 {
+      font-size: 2rem;
+    }
+  }
+  
+  

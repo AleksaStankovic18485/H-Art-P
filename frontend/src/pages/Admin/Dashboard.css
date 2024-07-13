@@ -1,0 +1,52 @@
+
+.dashboard-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    font-family:'Bebas neue', sans-serif;
+    font-weight:300;
+}
+
+.dashboard-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.8em;
+    color: #13272e;
+}
+
+.dashboard-chart-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.dashboard-chart-container {
+    flex: 1;
+    min-width: 400px;
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}.dashboard-chart-title {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    opacity: 0.7;
+    color: #13272e;
+}
+
+@media (max-width: 768px) {
+    .dashboard-chart-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dashboard-chart-container {
+        min-width: 100%;
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+  
+}

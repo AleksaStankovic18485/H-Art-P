@@ -1,0 +1,121 @@
+.userlist{
+    padding:1rem;
+    font-family:'Chivo', sans-serif;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.userlist-heading{
+    margin-bottom: 1rem; 
+    font-size: 2.5rem;
+    line-height: 2rem; 
+    font-weight: 600; 
+    color:#13272e;
+    text-transform: uppercase;
+    text-align: left;
+
+}
+
+.userlist-table-container{
+    display: flex; 
+    flex-direction: column; 
+    overflow-x: scroll;
+
+}
+
+.userlist-table{
+    background-color: #13272e;
+    margin-top:2rem;
+    border:2px solid #13272e;
+    
+}
+
+
+.userlist-table tbody{
+    background-color:rgba(203, 203, 203, 0.712);
+}
+
+.userlist-table thead tr th{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem; 
+    padding-left: 1rem;
+    padding-right: 1rem; 
+    text-align: left;
+    color:#ffffff; 
+}
+
+.userlist-table tbody tr td{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem; 
+    padding-left: 1rem;
+    padding-right: 1rem; 
+    
+}
+
+.userlist-input-container{
+    display: flex; 
+    align-items: center; 
+ 
+}
+
+.userlist-input-container input{
+    padding: 0.5rem; 
+    border-radius: 0.5rem; 
+    border-width: 1px; 
+    width: 100%; 
+}
+
+.userlist-input-container button{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem; 
+    padding-left: 1rem;
+    padding-right: 1rem; 
+    margin-left: 0.5rem; 
+    border-radius: 0.5rem; 
+    color: #ffffff; 
+    background-color: #13272e;  
+    cursor:pointer;   
+    transition:0.1s ease;
+}
+
+.userlist-input-container button:hover{
+    background-color: #17323c;  
+}
+
+.userlist-checks, .userlist-delete{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem; 
+    padding-left: 1rem;
+    padding-right: 1rem; 
+}
+
+.userlist-delete button{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem; 
+    padding-left: 1rem;
+    padding-right: 1rem; 
+    border-radius: 0.25rem; 
+    font-weight: 700; 
+    color: #ffffff; 
+    background-color: #DC2626;
+    cursor:pointer;
+    transition:0.1s ease;
+}
+
+.userlist-delete button:hover{
+    background-color: #de1111;
+}
+
+
+@media (max-width: 1000px) {
+
+.userlist-table-container{
+    
+    width:100vw;
+    overflow-x: scroll;
+}
+
+}

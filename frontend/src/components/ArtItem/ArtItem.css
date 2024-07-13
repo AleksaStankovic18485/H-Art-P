@@ -1,0 +1,186 @@
+@keyframes shimmer {
+    0% {
+        box-shadow: 0 0 5px red;
+    }
+
+    50% {
+        box-shadow: 0 0 20px red;
+    }
+
+    100% {
+        box-shadow: 0 0 5px red;
+    }
+}
+
+.live.art-item {
+    border: 1px solid red;
+    animation: shimmer 1.5s infinite;
+}
+
+.history {
+    filter: grayscale(105%);
+}
+
+.art-item {
+    width: 245px;
+    height: 420px;
+    margin: 0 16px 50px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px #000000bd;
+    transition: 0.3s;
+    animation: fadeIn 1s;
+    background-color: hsl(0, 0%, 90%);
+    font-family: "Chivo", sans-serif;
+    padding-bottom: 20px;
+    cursor: pointer;
+    border: 1px solid #13272e;
+    position: relative;
+}
+
+
+
+.art-item-image-container {
+    position: relative;
+    border-radius: 15px;
+    width: 100%;
+    height: 60%;
+}
+
+.art-item-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+}
+
+.art-item-info {
+    padding: 20px;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.art-item:hover {
+    background-color: #f2f2f2;
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 15px #000000bd;
+    filter: brightness(105%);
+}
+
+.art-item.history:hover {
+    filter: grayscale(80%);
+}
+
+.art-item-category-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.art-item-name-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    max-height: 40px;
+    overflow: hidden;
+}
+
+.art-item-name {
+    font-size: 22px;
+    font-weight: 600;
+    color: hsl(196, 42%, 10%);
+    white-space: nowrap;
+    /* Ovaj deo će sprečiti prelazak u novi red */
+    overflow: hidden;
+    /* Ovaj deo će sakriti višak teksta */
+    text-overflow: ellipsis;
+    /* Ovaj deo će dodati elipsu (...) za višak teksta */
+    max-width: 100%;
+
+}
+
+.art-item-category {
+    color: rgba(0, 0, 0, 0.829);
+    margin-left: 10px;
+    /* Ova promena postavlja kategoriju u gornji desni ugao */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+
+.art-item-artist {
+    color: #676767;
+    font-size: 13px;
+}
+
+.art-item-price {
+    color: hsl(196, 42%, 10%);
+    font-size: 23px;
+    font-weight: 500;
+    margin: 10px 0px;
+}
+
+.art-item-time-left {
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    text-align: center;
+    font-family: "Chivo", sans-serif;
+
+
+}
+
+
+
+.art-item-time-numbers,
+.art-item-expired {
+    background-color: #13272e;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.art-item-time-units,
+.art-item-expired-info {
+    font-size: 14px;
+    margin: 0;
+    padding-top: 4px;
+    opacity: 0.7;
+    color: #13272e;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .art-item{
+        width: 205px;
+        height: 380px;
+        margin: 0 16px 30px;
+    }
+    .art-item-name{
+        font-size:18px;
+    }
+
+    .art-item-category{
+        font-size:14px;
+    }
+    .art-item-price{
+        font-size: 20px;
+    }
+    .art-item-time-numbers,
+    .art-item-expired{
+        font-size: 16px;
+    }
+    
+    .art-item-time-units,
+    .art-item-expired-info {
+        font-size: 12px;
+    }
+}

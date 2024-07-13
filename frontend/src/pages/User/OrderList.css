@@ -1,0 +1,177 @@
+.order-list{
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.order-list-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    font-family: 'Chivo', sans-serif;
+    color: #13272e;
+  
+}
+
+.order-list-container h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.order-list-container .auction-item {
+    display: flex;
+    align-items: flex-start;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor:pointer;
+    position: relative; /* Added for positioning the status */
+}
+
+.order-list-container .auction-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.order-list-container .auction-image {
+    width: 150px;
+    height: 100px;
+    margin-right: 20px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.order-list-container .auction-details {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.order-list-container .auction-details h3 {
+    font-family: 'Bebas Neue', cursive;
+    margin: 0;
+    font-size: 1.8rem;
+    color: #13272e;
+}
+
+.order-list-container .auction-details p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #13272e;
+}
+
+.order-list-container b{
+    font-weight:600;
+}
+
+
+.auction-item .auction-status{
+    position:absolute;
+    right:1rem;
+    color:green;
+}
+
+.auction-item .auction-status .status-pending{
+    color:rgba(255, 68, 0, 0.85);
+}
+
+.order-list .category-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.order-list .category-buttons button {
+    position: relative;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius:10px;
+}
+
+.order-list .category-buttons button.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.order-list .category-buttons button:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.badge {
+    background-color: red;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    font-size: 12px;
+}
+
+.auction-item.delivered  > *:not(.auction-status){
+    filter: grayscale(110%);
+}
+
+@media screen and (max-width:450px){
+    .auction-item .auction-status{
+        left:1rem;
+        bottom:1rem;
+        font-size:0.9rem;
+    }
+
+    .order-list-container .auction-details h3 {
+        font-family: 'Bebas Neue', cursive;
+        margin: 0;
+        font-size: 1.6rem;
+        color: #13272e;
+        text-align: center;
+    }
+    
+    .order-list-container .auction-details p {
+        margin: 5px 0;
+        font-size: 0.8rem;
+        color: #13272e;
+    }
+    
+    .order-list-container .auction-item {
+       
+        padding: 10px;
+       
+    }
+}
+
+@media screen and (max-width:450px){
+    .order-list-container .auction-item {
+       
+        padding: 8px;
+       
+    }
+
+    .order-list-container .auction-image {
+        width: 120px;
+        height: 130px;
+        margin-right: 20px;
+        border-radius: 8px;
+        object-fit: cover;
+    }
+
+
+}
+

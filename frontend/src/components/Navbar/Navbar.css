@@ -1,0 +1,342 @@
+/* Navbar.css */
+
+.announcement-bar {
+    position: fixed;
+    width: 100vw;
+    background-color: #13272e;
+    padding: 15px;
+    text-align: center;
+    letter-spacing: 3px;
+    font-family: 'Chivo', serif;
+    font-weight: 600;
+    z-index: 3;
+    color: white;
+}
+
+.announcement-bar p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0; 
+    transition: opacity 0.5s ease; 
+    font-size: 16px;
+}
+
+.announcement-bar p.active {
+    opacity: 1; 
+}
+
+.navbar {
+    position: fixed;
+    top: 30px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    padding: 10px 10%;
+    width: 100vw;
+    margin: 0;
+    background: transparent;
+    z-index: 3;
+    transition: 0.2s ease;  
+}
+
+.navbar.active,
+.navbar.active .navbar-dropdown {
+    background-color: rgba(255, 255, 255, 0.711);
+    transition: 0.2s ease;
+}
+
+.navbar.active .logo,
+.navbar.active .navbar-left a,
+.navbar.active .navbar-right a {
+    color: black;
+}
+
+.navbar.active .navbar-dropdown li:hover a {
+    color: white;
+}
+
+.navbar-logo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.logo {
+    font-size: 50px;
+    font-family: "Sedan", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
+    letter-spacing: 3px;
+    color: rgb(216, 216, 216);
+}
+
+.navbar-left,
+.navbar-right {
+    flex: 1;
+    display: flex;
+    gap: 60px;
+}
+
+.navbar-left a,
+.navbar-right a {
+    font-size: 17px;
+    letter-spacing: 5px;
+    font-family: 'Chivo', sans-serif;
+    font-weight: 600;
+    transition: 0.3 ease-in;
+    text-align: center;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6); 
+    color: rgb(216, 216, 216);
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.navbar-left a:hover,
+.navbar-right a:hover {
+    text-decoration: underline;
+}
+
+.nothome .navbar {
+    background-color: rgba(255, 255, 255, 0.711);
+    position: relative;
+    top: 0;
+}
+
+.nothome .navbar-left a,
+.nothome .navbar-right a, 
+.nothome .logo {
+    color: black;
+}
+
+.nothome .announcement-bar {
+    position: relative;
+}
+
+.nothome .navbar-dropdown {
+    background-color: rgba(255, 255, 255, 0.711);
+}
+
+.nothome .navbar-dropdown li:hover a {
+    color: white;
+}
+
+.navbar-dropdown li {
+    display: block;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.navbar-dropdown li:hover {
+    background-color: #19566c;
+}
+
+.navbar-dropdown li a {
+    font-size: 15px;
+    transition: 0.2s ease-in;
+}
+
+.navbar-dropdown li:hover a {
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.navbar-dropdown {
+    background-color: #13272e;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px; 
+    z-index: 999;
+    display: none;
+}
+
+.navbar-dropdown-parent {
+    position: relative; 
+}
+
+.navbar-dropdown-parent:hover .navbar-dropdown {
+    display: block; 
+}
+
+.change-language {
+    right: 0;
+    top: 5px;
+    position: absolute;
+    display: flex;
+    align-items: start;
+}
+
+.change-language span {
+    margin-right: 10px;
+    filter: sepia(80%);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.change-language span:hover {
+    filter: brightness(105%);
+}
+
+.change-language span.selected {
+    filter: none;
+    cursor: initial;
+}
+
+.navbar-toggle {
+    display: none;
+    cursor: pointer;
+    color:white;
+    font-size: 28px;
+    transition: 0.3s ease;
+    
+}
+
+.navbar-toggle.open{
+    display: none;
+}
+
+.close-mobile-menu {
+    position: sticky;
+    top: 0;
+    right: 0;
+    padding: 25px;
+    background-color: #13272ec8;
+    width: 100%; /* Adjusted to match the full width */
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.close-mobile-menu img{
+    position: absolute;
+    right:20px;
+    top:20px;
+    filter:brightness(300%)
+    
+}
+.close-mobile-menu img:hover{
+    cursor: pointer;
+    filter:brightness(400%)
+    
+}
+
+
+
+
+
+.nothome .navbar-toggle,
+.navbar.active .navbar-toggle{
+    color:black;
+}
+
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 30px;
+    right: 0;
+    width: 250px;
+    height:50%;
+    background-color: #13272ec8;
+    /* transform: translateX(100%); */
+    transition: transform 0.3s ease-in-out;
+    z-index: 999;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* za IE i Edge  valjda*/
+    scrollbar-width: none;  /* za Firefox  */
+}
+
+.mobile-menu.open {
+    transform: translateX(0);
+    display: flex;
+  
+}
+
+
+.mobile-menu a {
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+.mobile-menu a:hover{
+    background-color: #133541dc;
+}
+
+.nothome .mobile-menu.open,
+.mobile-menu.active {
+    background-color: rgba(255, 255, 255, 0.711);
+    border:1px solid rgba(0, 0, 0, 0.503);
+}
+
+.nothome .mobile-menu a,
+.mobile-menu.active a{
+    color:black;
+}
+
+.nothome .mobile-menu a:hover,
+.mobile-menu.active a:hover{
+    color:white;
+}
+
+
+@media screen and (max-width: 1300px) {
+    .logo {
+        font-size: 40px;
+    }
+    .navbar-left,
+    .navbar-right {
+        gap: 40px;
+    } 
+    .navbar-left a,
+    .navbar-right a {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .navbar-left,
+    .navbar-right {
+        gap: 30px;
+    } 
+}
+
+@media screen and (max-width: 1040px) {
+    .navbar-left, 
+    .navbar-right {
+        display: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .announcement-bar p {
+        font-size: 14px;
+    }
+    .change-language span {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .announcement-bar p {
+        font-size: 12px;
+    }
+    .change-language span {
+        font-size: 18px;
+    }
+}
+
+
+
